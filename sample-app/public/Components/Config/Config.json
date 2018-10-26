@@ -1,0 +1,6 @@
+{
+    "LoginUrl": "https://ancient-reef-12507.herokuapp.com/login?iframe=true",
+    "Identity": "https://login2-int-fleury.azurewebsites.net/Identity",
+    "url": "https://login2-int-fleury.azurewebsites.net",
+    "AuthenticationCookie": "fl-authenticated"
+  }

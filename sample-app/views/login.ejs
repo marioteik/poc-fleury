@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://login2-int-fleury.azurewebsites.net/global/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://login2-int-fleury.azurewebsites.net/global/assets/css/ionicons.min.css">
+
+    <script src="https://login2-int-fleury.azurewebsites.net/global/assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://login2-int-fleury.azurewebsites.net/global/assets/js/popper.min.js"></script>
+    <script src="https://login2-int-fleury.azurewebsites.net/global/assets/js/bootstrap.min.js"></script>
+    <script src="https://login2-int-fleury.azurewebsites.net/global/assets/js/modernizr.custom.80028.js"></script>
+    <script src="https://login2-int-fleury.azurewebsites.net/global/assets/js/script.js"></script>
+
+    <!-- CSS FLEURY -->
+    <title>Fleury - Identidade Digital</title>
+    <link rel="icon" type="image/x-icon" href="https://login2-int-fleury.azurewebsites.net/fleury/assets/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://login2-int-fleury.azurewebsites.net/fleury/assets/favicon.ico" />
+    <link rel="stylesheet" href="https://login2-int-fleury.azurewebsites.net/fleury/assets/css/style.css" />
+    <style>
+        .fl-fade-is-loading {
+            display: block !important;
+        }
+
+
+        .fl-fade-load {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9999;
+            background: rgba(252,252,252,0.7);
+            overflow: visible;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            display: none;
+        }
+
+        .loading {
+            margin-top: 45vh;
+        }
+    </style>
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+            function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.nethttps://login2-int-fleury.azurewebsites.net/Scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
+        }({
+            instrumentationKey: 'ee400cbd-e107-4c43-9715-58c436e71668'
+        });
+
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+
+    </script>
+
+</head>
+<body>
+<div class="fl-fade-load fl-fade-is-loading">
+    <div class="loader d-block mx-auto loading"></div>
+</div>
+
+<header>
+    <div class="container">
+        <!-- Alert/Notify
+        Para criar uma mensagem de alerta animada, colocar dentro da div com ID="notificacao" -->
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <img src="https://login2-int-fleury.azurewebsites.net/fleury/assets/img/fleury.svg" class="d-flex mx-auto py-2" alt="Fleury" />
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+
+
+
+        <div id="fb-root"></div>
+        <script src="https://login2-int-fleury.azurewebsites.net/Scripts/facebook.js"></script>
+
+        <div id="main-content" class="row justify-content-center my-2 mt-md-5 mt-md-5 m-auto">
+            <div class="col-md-6 col-12">
+
+                <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active px-0 py-2 mr-2" data-toggle="pill" href="#login-senha" role="tab" aria-controls="login-senha" aria-selected="true">Login e Senha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 py-2 ml-2" data-toggle="pill" href="#celular-email" role="tab" aria-controls="celular-email" aria-selected="false">Celular ou E-mail</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <input type="hidden" id="returnURL" name="ViewData[ReturnUrl]" value="" />
+                    <div class="tab-pane fade show active" id="login-senha" role="tabpanel" aria-labelledby="login-senha-tab">
+
+                        <form name="loginSenha" action="" method="post">
+
+                            <div class="form-group">
+                                <input type="text" placeholder="Login" class="form-control" id="login" autofocus data-val="true" data-val-required="Por favor, informe seu login." name="LoginSenhaViewModel.Login" value="">
+                                <span class="text-danger field-validation-valid" data-valmsg-for="LoginSenhaViewModel.Login" data-valmsg-replace="true"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" placeholder="Senha" class="form-control" id="senha" data-val="true" data-val-required="Por favor, informe sua senha." name="LoginSenhaViewModel.Password">
+                                <span class="text-danger field-validation-valid" data-valmsg-for="LoginSenhaViewModel.Password" data-valmsg-replace="true"></span>
+                                <span id="caps-warning" class="text-warning" style="display: none;">O CapsLock está ativado.</span>
+                            </div>
+
+                            <div class="row mb-5">
+                                <div class="col-6">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="lembrar" data-val="true" data-val-required="The Lembrar-me? field is required." name="RememberMe" value="true">
+                                        <label class="custom-control-label" for="lembrar">Lembrar de mim</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <a href="https://resultados.fleury.com.br/Cliente/EsqueciSenha.aspx" target="_blank" class="float-right">Esqueceu a senha</a>
+
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100" name="button" value="login">Entrar</button>
+                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Eh4L4diId5MvjzyBuauocbEhUd-DCOfbXG1s-fn1BqHU9OcGVog3K4vAMnaDUgaceUz4uSSr41B5PIapOkv3ULWwtLIvHkHp0z2SZLX7c0YHvxXZAIT91hZG5nkl3KDIAzvGqiX3mxSYfBCtuyWzq8" /><input name="RememberMe" type="hidden" value="false"></form>
+
+                        <div class="row text-center my-2">
+                            <div class="col-4">
+                                <hr>
+                            </div>
+                            <div class="col-4">OU</div>
+                            <div class="col-4">
+                                <hr>
+                            </div>
+                        </div>
+
+                        <button id="fl-login-facebook" class="btn btn-facebook mb-4 w-100" type="button" onclick="fbLogin(1);">Entrar com Facebook</button>
+
+                        <div class="fl-cadastrar">
+                            <hr> <span>Não é nosso cliente?</span>
+                            <a href="/account/register/?marca=1">Crie sua conta!</a>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="celular-email" role="tabpanel" aria-labelledby="celular-email-tab">
+                        <form name="celularEmail" method="post" action="/Account/LoginSmsEmail">
+
+                            <div class="form-group">
+                                <input type="text" placeholder="Celular ou E-mail" class="form-control" id="celularEmail" data-val="true" data-val-remote="&#x27;CelularEmail&#x27; is invalid." data-val-remote-additionalfields="*.CelularEmail" data-val-remote-url="/Home/ValidarCamposCelularEmail" data-val-required="Por favor informe seu celular ou e-mail" name="LoginPasswordlessViewModel.CelularEmail" value="">
+                                <span class="text-danger field-validation-valid" data-valmsg-for="LoginPasswordlessViewModel.CelularEmail" data-valmsg-replace="true"></span>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-6">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="lembrar2" data-val="true" data-val-required="The LembrarDeMim field is required." name="LoginPasswordlessViewModel.LembrarDeMim" value="true">
+                                        <label class="custom-control-label" for="lembrar2">Lembrar de mim</label>
+                                    </div>
+                                </div>
+                                <div class="col-6"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Eh4L4diId5MvjzyBuauocbEhUd-DCOfbXG1s-fn1BqHU9OcGVog3K4vAMnaDUgaceUz4uSSr41B5PIapOkv3ULWwtLIvHkHp0z2SZLX7c0YHvxXZAIT91hZG5nkl3KDIAzvGqiX3mxSYfBCtuyWzq8" /><input name="LoginPasswordlessViewModel.LembrarDeMim" type="hidden" value="false"></form>
+                        <div class="row text-center my-2">
+                            <div class="col-4">
+                                <hr>
+                            </div>
+                            <div class="col-4">OU</div>
+                            <div class="col-4">
+                                <hr>
+                            </div>
+                        </div>
+
+                        <button id="fl-login-facebook" class="btn btn-facebook mb-4 w-100" type="button" onclick="fbLogin();">Entrar com Facebook</button>                 <div class="fl-cadastrar">
+                            <hr> Não é nosso cliente?
+                            <a href="/account/register/?marca=1">Crie sua conta!</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+        <script src="https://login2-int-fleury.azurewebsites.net/fleury/assets/js/jquery.maskedinput.js"></script>
+        <script src="https://login2-int-fleury.azurewebsites.net/fleury/assets/js/popper.min.js"></script>
+        <script src="https://login2-int-fleury.azurewebsites.net/fleury/assets/js/bootstrap.min.js"></script>
+        <script src="https://login2-int-fleury.azurewebsites.net/fleury/assets/js/modernizr.custom.80028.js"></script>
+        <script src="https://login2-int-fleury.azurewebsites.net/fleury/assets/js/script.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+
+        <script src="/js/account-login.js"></script>
+
+        <script>
+
+            ;$(document).ready(() => {
+
+                var site = 'Login';
+
+            if (site && site == 'autoagendamento' && document.referrer.indexOf('ModoUtilizacao/Unidades') == -1) {
+                $('.fl-cadastrar').hide();
+            }
+
+            });
+        </script>
+    </div>
+</main>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+<script src="https://login2-int-fleury.azurewebsites.net/Scripts/loading.js"></script>
+</body>
+</html>

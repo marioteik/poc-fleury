@@ -1,0 +1,17 @@
+{
+    "autoagendamento": {
+      "tipoUsuario": "cliente",
+      "urlsRetorno": {
+        "login": "http://autoagendamento-fleury-int.azurewebsites.net/LoginUsuario/LoginDigital",
+        "novoRegistro": "http://autoagendamento-fleury-int.azurewebsites.net/ModoUtilizacao/DadosNovoCliente",
+        "logout": "http://autoagendamento-fleury-int.azurewebsites.net/LoginUsuario/LogOut"
+      }, 
+      "links": [
+        {
+          "tipo": "link",
+          "descricao": "Meus Dados",
+          "url": "http://autoagendamento-fleury-int.azurewebsites.net/AreaCliente/Index"
+        }
+      ]
+    }
+  }

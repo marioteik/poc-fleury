@@ -1,0 +1,65 @@
+<div id="fl-profile" class="fl-profile">
+    <!--<div id="fl-logged-user" class="fl-logged-user">
+        <img id="fl-img-profile" alt="Image profile" style="display: none">
+        <span id="fl-user-name" name=""></span>
+    </div>-->
+    <div class="fl-unlogged-user">
+        <a href="javascript:LoginComponent.callauthentication()">ENTRAR</a>
+    </div>
+    <div id="fl-logged-user" class="fl-logged-user container">
+        <div class="fleurycss_dropdown">
+            <button onclick="usuarioLogado()" class="fleurycss_dropbtn">
+                <span id="fl-user-name" class="fleurycss_usuario-logado fleurycss_text-truncate"></span>
+
+            </button>
+            <div id="fleurycss_usuarioLogado" class="fleurycss_dropdown-content">
+                <div class="fleurycss_dependentes">
+                    <!-- <a href="#">
+                        <span class="fleurycss_text-truncate fleurycss_d-block fleurycss_font-weight-600">
+                            Maria Aparecida da Silva Souza Mendonça de Albuquerque
+                        </span>
+                        <small> Parentesco: Esposa</small>
+                    </a> -->
+
+                </div>
+                <div id="fl-logged-user-dropdown-custom"></div>
+                <a id="fl-myAccount" target="_blank" href="#">Minha Conta</a>
+                <form id="fl-signOut" action="https://login2-int-fleury.azurewebsites.net/Home/ExternalSignOut" method="post">
+                    <button type="submit" class="fl-btn-menu">
+                        <span class="fl-left">Sair</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sair -->
+    <div class="modal fade" id="sair" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <h5 class="font-weight-600 texto-cor-primaria mb-4">Voc� deseja mesmo sair?</h5>
+
+                    <div class="mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <button class="btn btn-secondary w-100 my-2">N�o</button>
+                            </div>
+                            <div class="col-5">
+                                <form action="https://login2-int-fleury.azurewebsites.net/Home/SignOut" method="post" target="fl-authentication-frame">
+                                    <button type="submit" class="btn btn-primary w-100 my-2">Sim</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+</div>

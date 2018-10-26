@@ -1,0 +1,9 @@
+.fl-login{
+    float: right;
+}
+
+.fl-logged-user{
+    width: 299px;
+    float: right;
+    margin: 10px;
+} 

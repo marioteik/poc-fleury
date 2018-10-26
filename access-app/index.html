@@ -1,0 +1,1109 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <!--<meta name="robots" content="noindex,nofollow">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Fleury Medicina e Saúde | Excelência em Diagnóstico</title>
+        <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://autoagendamento-fleury-int.azurewebsites.net/Content/font-awesome.min.css">
+
+    <link href="https://autoagendamento-fleury-int.azurewebsites.net/Content/css?v=sWvPSBsKg1zJNxT3PRLWWXxeXNMoA-7hcUWeqPv4BiQ1" rel="stylesheet"/>
+
+    <link href="https://autoagendamento-fleury-int.azurewebsites.net/Content/cssfleury?v=u24cclkCip_NlGqWzTAwVM7E8Dr4pg_sI0ygoJ--Ipo1" rel="stylesheet"/>
+
+    
+    <script src="https://autoagendamento-fleury-int.azurewebsites.net/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+    <script src="https://autoagendamento-fleury-int.azurewebsites.net/bundles/ievalidation?v="></script>
+
+
+    
+
+        <script>
+            //GOOGLE ANALYTICS
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-102457551-1', 'auto');
+
+            dataLayer = [
+                {
+                    'title': document.title.split(' ')[0]
+                }
+            ];
+
+            //<!-- Google Tag Manager -->
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-55Z7XBM');
+        </script>
+</head>
+<body>
+
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55Z7XBM"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+    <header>
+        <div class="menu-rapido">
+            <div class="container">
+                <div id="mensagemNavegadorAntigo" class="alert alert-topo-site-debug" role="alert" style="display: none">
+                    <p class="text-center">
+                        Identificamos que você está usando um navegador antigo, que não oferece suporte a todos os recursos necessários para essa página.<br />
+                        Por gentileza, utilize atualize seu navegador ou utilize uma alternativa.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-xs-3 homeMobile">
+                        <a href="http://www.fleury.com.br">
+                            <img src="https://autoagendamento-fleury-int.azurewebsites.net/Img/icon-home.gif" class="icon" alt="Página Inicial" />
+                            <p>HOME</p>
+                        </a>
+                    </div>
+
+                        <div id="caixa-login">
+                            <div class="col-md-12 col-sm-9">
+                                <div id="selecionarEstado" class="btn-localizacao">
+                                    <i class="glyphicon glyphicon-map-marker"></i>
+                                    <a href="#localizacao" id="alterarEstado" onclick="alterarEstado()">Seus exames serão realizados em: SP</a>
+                                    <input class="form-control input-sm" data-val="true" data-val-number="The field IdCarrinho must be a number." data-val-required="The IdCarrinho field is required." id="txtHash" name="Carrinho.IdCarrinho" type="hidden" value="0" />
+                                </div>
+                                    <div data-target="fleury/autoagendamento" id="fl-login"></div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cabecalho">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-6 cabecalhoMobile">
+                            <a href="https://autoagendamento-fleury-int.azurewebsites.net/Exame/Busca" id="fleury-logo"><img src="https://autoagendamento-fleury-int.azurewebsites.net/Img/fleury-logo2.png" class="img-responsive logo-site" alt="Fleury" /></a>
+                    </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <div class="nopadding iconesTopoMobile">
+                                <a href="https://autoagendamento-fleury-int.azurewebsites.net/Formulario/FormularioCliente" title="Atendimento" id="lnkAtendimento">
+                                    <img src="https://autoagendamento-fleury-int.azurewebsites.net/Img/IconesTopo/fleury-ligamos-para-voce.svg" width="40" class="icon" />
+                                    <p class="text-center">Ligamos para você</p>
+                                </a>
+                            </div>
+
+                            <div class="nopadding iconesTopoMobile">
+                                <a href="#" title="Atendimento" onclick="newWindowOpenerSafe('http://www.fleury.com.br/atendimento')">
+                                    <img src="https://autoagendamento-fleury-int.azurewebsites.net/Img/IconesTopo/fleury-fale-conosco.svg" width="40" class="icon" />
+                                    <p class="text-center">Fale Conosco</p>
+                                </a>
+                            </div>
+                            <div class="nopadding iconesTopoMobile">
+                                <a href="http://fleury.nccserver.com.br/fleury/Chat5/cliente/frm_login.aspx?IdArea=1&sel=HomePage&layout=Default" onclick="window.open(this.href, 'AtendimentoOnline', 'width=488, height=500');return false;" title="Chat Online" class="text-right">
+                                    <img src="https://autoagendamento-fleury-int.azurewebsites.net/Img/IconesTopo/fleury-chat-online.svg" width="40" class="icon" />
+                                    <p class="text-center">Chat Online</p>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+<div class="exames-servicos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6" id="caixa-exames-selecionados">
+                <h2 style="line-height: 29px;">
+                    <img src="https://autoagendamento-fleury-int.azurewebsites.net/Img/icon-buscar-exames-branco.png" alt="Busca e Agendamentos de Exames" /> AUTOAGENDAMENTO FLEURY
+                </h2>
+            </div>
+
+            <div class="col-md-4 col-sm-6" id="exames-selecionados-carrinho">
+                <div class="exames-selecionados">
+                    <!--<i class="fa fa-shopping-bag icon-bag" aria-hidden="true"></i>-->
+
+                        <img src="https://autoagendamento-fleury-int.azurewebsites.net/Img/shopping-basket.png" alt="Alternate Text" style="width: 9%; margin-bottom: 1%;" />
+
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="lnkExamesSelecionados">EXAMES SELECIONADOS <span class="badge" id="quantidade_carrinho"><b>0</b></span> <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu dropdown-cart scrollable-menu" role="menu">
+                            <li class="dropdown-auto-agendamento" id="carrinho_agendamento" style="display: none;">AGENDAMENTO ONLINE</li>
+                                                    <li class="dropdown-pre-agendamento" id="carrinho_agendamentocac" style="display: none;">AGENDAMENTO PELA CENTRAL</li>
+                                                                            <li class="dropdown-sem-agendamento" id="carrinho_semagendamento" style="display: none;">NÃO É NECESSÁRIO AGENDAR</li>
+                                                <li>
+                            <div class="bg-btn-agenda">
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+
+            <div class="col-md-1 col-sm-12"></div>
+        </div>
+
+    </div>
+</div>
+        
+
+
+
+<div class="busca-exames">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+<form action="/Exame/Busca" id="formBusca" method="post" name="formBusca">                <div class="col-md-10">
+                    <h3>Busca e Agendamentos de Exames</h3>
+                    <div class="row nopadding">
+                        <div class="col-md-9 nopadding">
+                            <div class="input-group">
+                                <input class="form-control" data-val="true" data-val-minlength="Devem ser informados ao menos 2 caracteres para a pesquisa." data-val-minlength-min="2" data-val-required="Não foram informados critérios para a pesquisa." id="txtBuscaExames" name="TextoBusca" placeholder="QUAL EXAME VOCÊ PROCURA?" type="text" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="TextoBusca" data-valmsg-replace="true"></span>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning" type="submit" id="buscarExames"><i class="glyphicon glyphicon-search" onclick="exibirMensagenSatisfatoria()"></i> BUSCAR</button>
+                                </span>
+                            </div>
+                            <br />
+
+                            <div class="msgAbaixoBusca">
+                                <span>Para facilitar a análise da sua solicitação, selecione todos os exames que constam no seu pedido médico, incluindo os sem necessidade de agendamento</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 nopadding">
+                            <div class="busca-resultado">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</form>            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+
+
+        <div class="exames-mais-buscados-msg" id="caixaInformativa">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1 col-sm-12"></div>
+                    <div class="col-md-10 col-sm-12">
+                        <br>
+                        <div class="alert alert-mais-buscados alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span id="fecharCaixaInfo" aria-hidden="true">&times;</span></button>
+                            <p>
+                                Bem-vindo(a)! Nesta seção você pode:
+<ul><li>•&nbsp; Agendar exames de maneira 100% online,</li>
+<li>•&nbsp; Pré-agendar exames que serão confirmados pela nossa Central,</li>
+<li>•&nbsp; Obter instruções sobre exames que não têm a necessidade de agendamento.</li></ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-12"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="exames-mais-buscados">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1 col-sm-12"></div>
+                    <div class="col-md-3 col-sm-12">
+                            <h3><i class="glyphicon glyphicon-zoom-in"></i> Principais resultados buscados</h3><br>
+                    </div>
+                        <div class="col-md-7 col-sm-12">
+                            <p class="legenda-icons">
+                                Legenda: <o class="aon" style="padding: 1% !important; width: 10% !important;">AON</o> Agendamento Online
+                                <o class="ace" style="padding: 1% !important; width: 10% !important;">ACE</o> Agendamento pela Central
+                                <o class="sna" style="padding: 1% !important; width: 10% !important;">SNA</o> Sem Necessidade de Agendamento
+                            </p>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="busca-exames-resultados" id="gridbuscaexames">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 col-md-12">
+
+                        <ul class="busca-exames-item" id="gridexames" style="text-transform: uppercase;" idsexames="5346,3165,665,1006,2282,5312,3412,1498,2182,585">
+                                <li id="slide">
+                                    <div class="card-group">
+                                        <div class="card borda_ace" id="CaixaExame_5346" style="height: 220px;">
+                                            <div class="card-block">
+                                                <h4 class="card-title" data-toggle="tooltip" title="Resson&#226;ncia magn&#233;tica, Tractografia" id="exame_sinonimia_5346">Resson&#226;ncia magn&#233;tica, Tractografia</h4>
+                                                <p class="card-text" data-toggle="tooltip" title="Resson&#226;ncia magn&#233;tica, Tractografia" id="exame_descricao_5346">Resson&#226;ncia magn&#233;tica, Tractografia</p>
+                                            </div>
+
+                                            <div class="card-block" style="position: absolute; bottom: 36px !important; left: -15px; right: -15px;">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 mobileIcon" style="float: left;" idagendamento="PreAgendavel">
+                                                        <p class="ace" data-toggle="tooltip" title="Agendamento pela Central">ACE</p>
+                                                    </div>
+
+                                                    <div class="col-md-6 mobileIcon" style="float: right;">
+                                                        <a href="/Exibir/Exibir/5346" title="Mais detalhes"> <i class="fa fa-search" style="font-size: 23px;" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                        <a id="5346" style="cursor: pointer" class="btn-selecionar adicionarexame"><i class="fa fa-square-o" aria-hidden="true"></i> SELECIONAR</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li id="slide">
+                                    <div class="card-group">
+                                        <div class="card borda_ace" id="CaixaExame_3165" style="height: 220px;">
+                                            <div class="card-block">
+                                                <h4 class="card-title" data-toggle="tooltip" title="Polissonografia" id="exame_sinonimia_3165">Polissonografia</h4>
+                                                <p class="card-text" data-toggle="tooltip" title="Polissonografia" id="exame_descricao_3165">Polissonografia</p>
+                                            </div>
+
+                                            <div class="card-block" style="position: absolute; bottom: 36px !important; left: -15px; right: -15px;">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 mobileIcon" style="float: left;" idagendamento="PreAgendavel">
+                                                        <p class="ace" data-toggle="tooltip" title="Agendamento pela Central">ACE</p>
+                                                    </div>
+
+                                                    <div class="col-md-6 mobileIcon" style="float: right;">
+                                                        <a href="/Exibir/Exibir/3165" title="Mais detalhes"> <i class="fa fa-search" style="font-size: 23px;" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                        <a id="3165" style="cursor: pointer" class="btn-selecionar adicionarexame"><i class="fa fa-square-o" aria-hidden="true"></i> SELECIONAR</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li id="slide">
+                                    <div class="card-group">
+                                        <div class="card borda_ace" id="CaixaExame_665" style="height: 220px;">
+                                            <div class="card-block">
+                                                <h4 class="card-title" data-toggle="tooltip" title="Endoscopia, digestiva alta" id="exame_sinonimia_665">Endoscopia, digestiva alta</h4>
+                                                <p class="card-text" data-toggle="tooltip" title="Endoscopia, digestiva alta" id="exame_descricao_665">Endoscopia, digestiva alta</p>
+                                            </div>
+
+                                            <div class="card-block" style="position: absolute; bottom: 36px !important; left: -15px; right: -15px;">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 mobileIcon" style="float: left;" idagendamento="PreAgendavel">
+                                                        <p class="ace" data-toggle="tooltip" title="Agendamento pela Central">ACE</p>
+                                                    </div>
+
+                                                    <div class="col-md-6 mobileIcon" style="float: right;">
+                                                        <a href="/Exibir/Exibir/665" title="Mais detalhes"> <i class="fa fa-search" style="font-size: 23px;" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                        <a id="665" style="cursor: pointer" class="btn-selecionar adicionarexame"><i class="fa fa-square-o" aria-hidden="true"></i> SELECIONAR</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li id="slide">
+                                    <div class="card-group">
+                                        <div class="card borda_sna" id="CaixaExame_1006" style="height: 220px;">
+                                            <div class="card-block">
+                                                <h4 class="card-title" data-toggle="tooltip" title="Hemograma, sangue total" id="exame_sinonimia_1006">Hemograma, sangue total</h4>
+                                                <p class="card-text" data-toggle="tooltip" title="Hemograma, sangue total" id="exame_descricao_1006">Hemograma, sangue total</p>
+                                            </div>
+
+                                            <div class="card-block" style="position: absolute; bottom: 36px !important; left: -15px; right: -15px;">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 mobileIcon" style="float: left;" idagendamento="NaoPrecisaAgendar">
+                                                        <p class="sna" data-toggle="tooltip" title="Sem necessidade de agendamento">SNA</p>
+                                                    </div>
+
+                                                    <div class="col-md-6 mobileIcon" style="float: right;">
+                                                        <a href="/Exibir/Exibir/1006" title="Mais detalhes"> <i class="fa fa-search" style="font-size: 23px;" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                        <a id="1006" style="cursor: pointer" class="btn-selecionar adicionarexame"><i class="fa fa-square-o" aria-hidden="true"></i> SELECIONAR</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li id="slide">
+                                    <div class="card-group">
+                                        <div class="card borda_sna" id="CaixaExame_2282" style="height: 220px;">
+                                            <div class="card-block">
+                                                <h4 class="card-title" data-toggle="tooltip" title="Urina, Exame de, urina jato m&#233;dio" id="exame_sinonimia_2282">Urina, Exame de, urina jato m&#233;dio</h4>
+                                                <p class="card-text" data-toggle="tooltip" title="Urina, Exame de, urina jato m&#233;dio" id="exame_descricao_2282">Urina, Exame de, urina jato m&#233;dio</p>
+                                            </div>
+
+                                            <div class="card-block" style="position: absolute; bottom: 36px !important; left: -15px; right: -15px;">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 mobileIcon" style="float: left;" idagendamento="NaoPrecisaAgendar">
+                                                        <p class="sna" data-toggle="tooltip" title="Sem necessidade de agendamento">SNA</p>
+                                                    </div>
+
+                                                    <div class="col-md-6 mobileIcon" style="float: right;">
+                                                        <a href="/Exibir/Exibir/2282" title="Mais detalhes"> <i class="fa fa-search" style="font-size: 23px;" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                        <a id="2282" style="cursor: pointer" class="btn-selecionar adicionarexame"><i class="fa fa-square-o" aria-hidden="true"></i> SELECIONAR</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li id="slide">
+                                    <div class="card-group">
+                                        <div class="card borda_ace" id="CaixaExame_5312" style="height: 220px;">
+                                            <div class="card-block">
+                                                <h4 class="card-title" data-toggle="tooltip" title="Tomografia por emiss&#227;o de p&#243;sitrons, para pesquisa de viabilidade mioc&#225;rdica" id="exame_sinonimia_5312">Tomografia por emiss&#227;o de p&#243;sitrons, para pesquisa de viabilidade mioc&#225;rdica</h4>
+                                                <p class="card-text" data-toggle="tooltip" title="Tomografia por emiss&#227;o de p&#243;sitrons, para pesquisa de viabilidade mioc&#225;rdica" id="exame_descricao_5312">Tomografia por emiss&#227;o de p&#243;sitrons, para pesquisa de viabilidade mioc&#225;rdica</p>
+                                            </div>
+
+                                            <div class="card-block" style="position: absolute; bottom: 36px !important; left: -15px; right: -15px;">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 mobileIcon" style="float: left;" idagendamento="PreAgendavel">
+                                                        <p class="ace" data-toggle="tooltip" title="Agendamento pela Central">ACE</p>
+                                                    </div>
+
+                                                    <div class="col-md-6 mobileIcon" style="float: right;">
+                                                        <a href="/Exibir/Exibir/5312" title="Mais detalhes"> <i class="fa fa-search" style="font-size: 23px;" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                        <a id="5312" style="cursor: pointer" class="btn-selecionar adicionarexame"><i class="fa fa-square-o" aria-hidden="true"></i> SELECIONAR</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li id="slide">
+                                    <div class="card-group">
+                                        <div class="card borda_ace" id="CaixaExame_3412" style="height: 220px;">
+                                            <div class="card-block">
+                                                <h4 class="card-title" data-toggle="tooltip" title="Ecocardiograma, de esfor&#231;o" id="exame_sinonimia_3412">Ecocardiograma, de esfor&#231;o</h4>
+                                                <p class="card-text" data-toggle="tooltip" title="Ecocardiograma, de esfor&#231;o" id="exame_descricao_3412">Ecocardiograma, de esfor&#231;o</p>
+                                            </div>
+
+                                            <div class="card-block" style="position: absolute; bottom: 36px !important; left: -15px; right: -15px;">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 mobileIcon" style="float: left;" idagendamento="PreAgendavel">
+                                                        <p class="ace" data-toggle="tooltip" title="Agendamento pela Central">ACE</p>
+                                                    </div>
+
+                                                    <div class="col-md-6 mobileIcon" style="float: right;">
+                                                        <a href="/Exibir/Exibir/3412" title="Mais detalhes"> <i class="fa fa-search" style="font-size: 23px;" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                        <a id="3412" style="cursor: pointer" class="btn-selecionar adicionarexame"><i class="fa fa-square-o" aria-hidden="true"></i> SELECIONAR</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li id="slide">
+                                    <div class="card-group">
+                                        <div class="card borda_sna" id="CaixaExame_1498" style="height: 220px;">
+                                            <div class="card-block">
+                                                <h4 class="card-title" data-toggle="tooltip" title="Vitamina D, 25 Hidroxi, soro" id="exame_sinonimia_1498">Vitamina D, 25 Hidroxi, soro</h4>
+                                                <p class="card-text" data-toggle="tooltip" title="Vitamina D, 25 Hidroxi, soro" id="exame_descricao_1498">Vitamina D, 25 Hidroxi, soro</p>
+                                            </div>
+
+                                            <div class="card-block" style="position: absolute; bottom: 36px !important; left: -15px; right: -15px;">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 mobileIcon" style="float: left;" idagendamento="NaoPrecisaAgendar">
+                                                        <p class="sna" data-toggle="tooltip" title="Sem necessidade de agendamento">SNA</p>
+                                                    </div>
+
+                                                    <div class="col-md-6 mobileIcon" style="float: right;">
+                                                        <a href="/Exibir/Exibir/1498" title="Mais detalhes"> <i class="fa fa-search" style="font-size: 23px;" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                        <a id="1498" style="cursor: pointer" class="btn-selecionar adicionarexame"><i class="fa fa-square-o" aria-hidden="true"></i> SELECIONAR</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li id="slide">
+                                    <div class="card-group">
+                                        <div class="card borda_aon" id="CaixaExame_2182" style="height: 220px;">
+                                            <div class="card-block">
+                                                <h4 class="card-title" data-toggle="tooltip" title="Eletrocardiograma, de esfor&#231;o" id="exame_sinonimia_2182">Eletrocardiograma, de esfor&#231;o</h4>
+                                                <p class="card-text" data-toggle="tooltip" title="Eletrocardiograma, de esfor&#231;o" id="exame_descricao_2182">Eletrocardiograma, de esfor&#231;o</p>
+                                            </div>
+
+                                            <div class="card-block" style="position: absolute; bottom: 36px !important; left: -15px; right: -15px;">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 mobileIcon" style="float: left;" idagendamento="Agendavel">
+                                                        <p class="aon" data-toggle="tooltip" title="Agendamento Online">AON</p>
+                                                    </div>
+
+                                                    <div class="col-md-6 mobileIcon" style="float: right;">
+                                                        <a href="/Exibir/Exibir/2182" title="Mais detalhes"> <i class="fa fa-search" style="font-size: 23px;" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                        <a id="2182" style="cursor: pointer" class="btn-selecionar adicionarexame"><i class="fa fa-square-o" aria-hidden="true"></i> SELECIONAR</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                                <li id="slide">
+                                    <div class="card-group">
+                                        <div class="card borda_sna" id="CaixaExame_585" style="height: 220px;">
+                                            <div class="card-block">
+                                                <h4 class="card-title" data-toggle="tooltip" title="Creatinina, Depura&#231;&#227;o, soro e urina" id="exame_sinonimia_585">Creatinina, Depura&#231;&#227;o, soro e urina</h4>
+                                                <p class="card-text" data-toggle="tooltip" title="Creatinina, Depura&#231;&#227;o, soro e urina" id="exame_descricao_585">Creatinina, Depura&#231;&#227;o, soro e urina</p>
+                                            </div>
+
+                                            <div class="card-block" style="position: absolute; bottom: 36px !important; left: -15px; right: -15px;">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6 mobileIcon" style="float: left;" idagendamento="NaoPrecisaAgendar">
+                                                        <p class="sna" data-toggle="tooltip" title="Sem necessidade de agendamento">SNA</p>
+                                                    </div>
+
+                                                    <div class="col-md-6 mobileIcon" style="float: right;">
+                                                        <a href="/Exibir/Exibir/585" title="Mais detalhes"> <i class="fa fa-search" style="font-size: 23px;" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                        <a id="585" style="cursor: pointer" class="btn-selecionar adicionarexame"><i class="fa fa-square-o" aria-hidden="true"></i> SELECIONAR</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation" style="text-align: center;">
+                    <ul class="pagination">
+                        <li class="page-item" style="cursor: pointer;">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <br /><br />
+        </div>
+
+
+
+<div class="barraFixa-Prosseguir" id="barraFixaProsseguir">
+            
+                    <div class="btn-prosseguir container">
+                        <a id="btnProsseguir-open" disabled data-toggle="tooltip" data-placement="top" title="Seu carrinho está vazio. Por favor selecione um exame para continuar." class="btn btn-lg-selecionar btn-sm">CONTINUAR</a>
+                    </div>
+</div>
+
+
+
+
+
+
+    </main>
+
+    <div class="btnChamaFormContatoCliente" style="display: none">
+        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 btnContatoClienteBtn">
+                <a href="/Formulario/FormularioCliente" data-toggle="modal" title="Solicitação de Contato" id="btnFormFleury">
+                    <img src="https://autoagendamento-fleury-int.azurewebsites.net/Img/icone_atendimento-fms.png" class="icon" style="height: 86px;" />
+                </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="col-md-1 col-xs-offset-0"></div>
+            <div class="col-md-10 col-xs-12 nopadding">
+                <div class="row">
+                    <div class="col-md-2 col-sm-12 nopadding">
+                            <a class="img-responsive" href=""><img src="https://autoagendamento-fleury-int.azurewebsites.net/Img/logo-fleury-b.png" class="img-responsive" alt="Logo Fleury"></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 nopadding">
+                        <ul>
+                            <li>
+                                    © 2018 Fleury - Todos os Direitos Reservados
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Grande São Paulo (11) 3179-0822 &nbsp;&nbsp; | &nbsp;&nbsp; Outras localidades 0800-704-0822
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="row">
+                        <ul>
+                            <li><a target="_blank" href="http://www.fleury.com.br/Pages/politica-de-privacidade-e-publicidade.aspx">Política de Privacidade e Publicidade </a></li>
+                            <li><a target="_blank" href="http://www.fleury.com.br/medicos/educacao-medica/nucleo-educacional-cientifico/Pages/default.aspx">Política de Autoridade </a></li>
+                            <li><a target="_blank" href="http://www.fleury.com.br/Pages/fonte-de-financiamento.aspx">Fonte de Financiamento</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="col-md-1 col-xs-offset-0"></div>
+
+        </div>
+    </footer>
+
+
+
+
+    <!--INICIO AREA MODAL -->
+    <!--MODAL Localizacao-->
+    <div id="localizacao" class="modal fade" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header localizacaoHeader">
+                    <button type="button" id="closeModalEstado" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <center><h4 class="modal-title">Bem-vindo(a) à plataforma de Autoagendamento</h4></center>
+                </div>
+                <div class="modal-body localizacao">
+                    <div class="row">
+                        <div class="col-xs-1"></div>
+                        <div class="col-xs-10">
+                            <p>Para iniciar, selecione o Estado em que você deseja realizar seus exames.<br> </p>
+                        </div>
+                        <div class="col-xs-1"></div>
+                    </div>
+                    
+                    <br />
+                    <div class="row localizacao-footer">
+<form action="/Exame/DefinirEstado" id="formEstado" method="post" name="formEstado">                            <div class="col-md-2 col-xs-offset-0"></div>
+                            <div class="col-md-6 col-xs-6">
+                                <select class="form-group-sm form-control" id="slcEstados" name="SiglaEstadoSelecionada"><option value="DF">Distrito Federal</option>
+<option selected="selected" value="SP">S&#227;o Paulo</option>
+</select>
+                            </div>
+                            <div class="col-md-2 col-xs-6">
+                                <button type="submit" id="btnTrocaEstado" class="btn btn-warning">OK </button>
+                            </div>
+                            <div class="col-md-12 col-xs-offset-0" id="msgErrorEstado" style="display: none;">
+                                <br />
+                                <div class="alert alert-warning alert-dismissible" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <strong>Desculpe!</strong> No momento, o Autoagendamento está disponível apenas para o estado de São Paulo. Para agendar seus exames, entre em contato com nossa Central ou utilize nosso Chat.
+                                    <p style="text-align: inherit; margin-top: 2%;">Grande São Paulo (11) 3179-0822 &nbsp;&nbsp; | &nbsp;&nbsp; Outras localidades 0800-704-0822</p>
+                                </div>
+                            </div>
+</form>                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!--MODAL loading-->
+    <div class="modal fade" id="modalLoadingLayout" tabindex="-1" role="dialog" style="display: none;" aria-labelledby="mySmallModalLabel" data-backdrop="static">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content" style="background-color: transparent; border: 0; box-shadow: none;">
+                <div class="modal-body">
+                    <div class="spinner">
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                    <center><p style="color: white;">Aguarde</p></center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL LOGIN-->
+    <div class="modal fade" role="dialog" id="gridModal" tabindex="-1" aria-labelledby="gridModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="logar-sistema">
+                    <div class="logo-modal">
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-6">
+                                    <img src="https://autoagendamento-fleury-int.azurewebsites.net/Img/fleury-logo2.png" class="img-responsive" alt="Logo Fleury" />
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+                    <div class="mensagem-modal" id="divMsgErro" style="display: none;">
+                        <div class="alert alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <label class="text-center" id="txtErrorLogin"></label>
+                        </div>
+                    </div>
+                    <div id="login" class="tab-pane fade in active">
+<form action="https://autoagendamento-fleury-int.azurewebsites.net/LoginUsuario/LogOn" id="formLoginUser" method="post" name="formLogon"><input id="sucesso" name="sucesso" type="hidden" value="False" /><input name="__RequestVerificationToken" type="hidden" value="WscjiqJ8Qnh6EaFshL9s-pdP7DHqeQanCTEGhmHmOOX5nJE3K6oOTtPV2fE8w42n5WPCzVx6rTJuG5Vjer2RKM2J7tXM07OJx9yqrPjqsDk1" />                            <div class="login">
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h3></h3>
+                                            <p>
+                                                Para opção de <strong>Login</strong> insira a mesma identificação e senha que você utiliza para retirar Resultados de Exames.
+                                            </p>
+                                            <br />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <label for="Usuario_nomeUsuario">IDENTIFICA&#199;&#195;O</label>
+                                            <input class="form-control input-lg" data-val="true" data-val-required="Por favor, digite seu usuario" id="txtIdentificacaoUsuario" name="Usuario.nomeUsuario" placeholder="Digite seu usuário" type="text" value="" />
+                                            
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="Usuario.nomeUsuario" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <label for="Usuario_senhaUsuario">SENHA</label>
+                                            <input class="form-control input-lg" data-val="true" data-val-required="Por favor, digite sua senha" id="usuario.Senha" maxLength="8" name="Usuario.senhaUsuario" placeholder="Digite sua senha" type="password" />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="Usuario.senhaUsuario" data-valmsg-replace="true"></span>
+                                            <a class="lnkEsqSenha" style="cursor: pointer">Esqueci minha Senha</a>
+                                            <div id="msgEsqSenha" class="text-danger" style="display:none">
+                                                <br /><br />Login não preenchido. <br />Caso não saiba seu login, entre em contato com nossa central de atendimento.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+                                    <br>
+
+                                    <div class="row">
+                                        <div class="col-md-2 col-xs-offset-0"></div>
+                                        <div class="col-md-3 col-xs-10">
+                                            <label for="Usuario_captchaImage">C&#211;DIGO</label>
+                                            <br />
+                                            <img id="imgCaptcha" src="" class="img-responsive" alt="Código" />
+                                        </div>
+                                        <div class="col-md-1 col-xs-2 nopadding">
+                                            <i class="btn-refresh glyphicon glyphicon-refresh" id="btnRefreshCaptcha" style="cursor: pointer;">
+                                            </i>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <label for="Usuario_captchaText">DIGITE O C&#211;DIGO</label>
+                                            <input autocomplete="off" class="form-control input-lg" data-val="true" data-val-required="Por favor, digite o texto exibido ao lado" id="usuario.CaptchaText" name="Usuario.captchaText" placeholder="Digite o código" type="text" value="" />
+                                            <span class="field-validation-valid text-danger" data-valmsg-for="Usuario.captchaText" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="col-md-2 col-xs-offset-0"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-xs-offset-0"></div>
+                                        <div class="col-md-4 col-xs-6">
+                                            <button type="reset" id="btnFechar" class="btn btn-default" data-dismiss="modal">FECHAR</button>
+                                        </div>
+                                        <div class="col-md-4 col-xs-6">
+                                            <button type="submit" class="btn btn-warning" id="btnEntrar">ENTRAR </button>
+                                        </div>
+                                        <div class="col-md-2 col-xs-offset-0"></div>
+                                    </div>
+                                </div>
+                            </div>
+</form>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal cotinue-->
+    <div class="modal fade" tabindex="-1" id="modalContinue" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Tem certeza que deseja continuar?</h4>
+                </div>
+                <div class="modal-body continue">
+                    Insira todos os exames do pedido médico (inclusive os exames Sem Necessidade de Agendamento) para enviarmos as instruções de preparo corretamente.
+                    
+                </div>
+                <div class="modal-footer continue">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-default" onclick="permanecerTela()">Incluir mais exames</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-warning" onclick="proximaTela()">Desejo continuar</button>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </div>
+
+    <!--MODAL MSG PROSSEGUIR SENHA-->
+    <div class="modal fade" id="modalProsseguir" tabindex="-1" role="dialog" style="display: none;" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span style="font-size: 17px; text-align: center; color: #f47920;">
+                        Seu carrinho está vazio.<br /> Por favor selecione um exame para prosseguir.
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <div style="text-align: center;"><label style="font-size: 16px; font-weight: bold; cursor: pointer; color: #f47920;" data-dismiss="modal">OK</label></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL RECUPERA SENHA-->
+    <div class="modal fade" role="dialog" id="ModalMsgRecuperaSenha" tabindex="-1" data-backdrop="static" data-keyboard="false" aria-labelledby="gridModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="logar-sistema">
+                    <!--Logo-->
+                    <div id="login" class="tab-pane fade in active">
+                        <div class="login">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="txt-modal-sair">
+                                            <h2>Esqueci Minha Senha</h2>
+                                            <p>
+                                                Você será redirecionado para a página de recuperação de senha na área de Resultados de Exames.
+                                                Após a realização desse processo, retorne à plataforma de Autoagendamento para concluir sua solicitação.
+                                                <br /><br />
+                                                Usuário: <b id="usuarioRecuperar"></b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-xs-offset-0"></div>
+                                    <div class="col-md-4 col-xs-6">
+                                        <button type="reset" id="btnEsqFechar" class="btn btn-sm btn-default" data-dismiss="modal">NÃO</button>
+                                    </div>
+                                    <div class="col-md-4 col-xs-6">
+                                        <button type="submit" class="btn btn-warning" id="btnEsqSim">SIM </button>
+                                    </div>
+                                    <div class="col-md-2 col-xs-offset-0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MODAL Confirm Logout-->
+    <div class="modal fade" role="dialog" id="gridConfirmModal" tabindex="-1" data-backdrop="static" data-keyboard="false" aria-labelledby="gridModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="logar-sistema">
+                    <!--Logo-->
+                    <div id="login">
+                        <div class="login">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="txt-modal-sair">
+                                            <h2>Deseja sair realmente ?</h2>
+                                                <p>
+                                                    Todos os itens selecionado serão perdidos.
+                                                </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-xs-offset-0"></div>
+                                    <div class="col-md-4 col-xs-6">
+                                        <button type="reset" id="btnFechar" class="btn btn-sm btn-default" data-dismiss="modal">NÃO</button>
+                                    </div>
+                                    <div class="col-md-4 col-xs-6">
+                                        <button type="submit" class="btn btn-warning" id="btnSim">SIM </button>
+                                    </div>
+                                    <div class="col-md-2 col-xs-offset-0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FIM AREA MODAL-->
+
+    <script src="https://autoagendamento-fleury-int.azurewebsites.net/bundles/jquery?v=hkekGmS2K884w6pvb87eI1g6zKdNT5weyiJV0_2h6nA1"></script>
+
+    <script src="https://autoagendamento-fleury-int.azurewebsites.net/bundles/jqueryval?v=UD-hNd6dz-YvtRzVvoEjvUm2AMS10J1boOmN4b0bfX81"></script>
+
+    <script src="https://autoagendamento-fleury-int.azurewebsites.net/bundles/bootstrap?v=S9-VFjJll7-h6B6vedKZxuNRBdqXLY3XTPKv3OQRv1w1"></script>
+
+    <script src="https://autoagendamento-fleury-int.azurewebsites.net/Scripts/jquery.mask-v1.14.0.js"></script>
+
+
+    <script src="https://ancient-reef-12507.herokuapp.com/Components/IdentidadeDigital.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            getInternetExplorerVersion();
+
+            url = window.location.href;
+            if (url.match("/Confirmacao/Sucesso") || url.match("/Formulario/FormularioCliente")) {
+                $(".btnContatoClienteBtn").css({
+                    display: "none",
+                    visibility: "hidden"
+                });
+            }
+        });
+
+        function getInternetExplorerVersion() {
+            //console.log("Navegador: ", navigator.appName + "\n Version:" + navigator.appVersion);
+            if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion <= "4.0(compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0)") {
+                //console.log("Exibe mensagem navegador Antigo");
+                $("#mensagemNavegadorAntigo").slideDown("slow");
+                //$("#mensagemNavegadorAntigo").css("display", 'initial');
+            }
+        }
+    </script>
+
+    
+    <script src="https://autoagendamento-fleury-int.azurewebsites.net/bundles/buscaexamesjs?v=J8vDo8gvokHJm695z2wN97T_7l7BvSfifPlBt3F-Zsg1"></script>
+
+
+
+
+        <script>
+            localStorage.removeItem("Name");
+        </script>
+            <script>
+            $(document).ready(function () {
+                ConsoleLog("Layout.cshtml", window.location.href);
+                if (window.location.href.indexOf("Confirmacao") > 0) {
+                    $("#LoginUser").css({
+                        display: "none",
+                        visibility: "hidden"
+                    });
+                }
+            });
+        </script>
+
+    <script>
+
+        $('#btnEntrar').on('click', function () {
+            $("#msgEsqSenha").css("display", 'none');
+            var value = document.getElementById('txtIdentificacaoUsuario').value;
+            localStorage.setItem("Name", value);
+        });
+
+        $(document).ready(function () {
+            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+            $.validator.unobtrusive.parse("#formLoginUser");
+            refreshCaptchaAuto();
+            refreshCaptcha();
+        });
+
+        //POPOVER INFORMACOES DE CADA TIPO DE EXAME SELECIONADO
+        //DAS TELAS DE CONFIRMACAO INDEX E SUCESSO
+
+        $(['[id="infoAgeOnline"]']).popover({
+            trigger: 'hover',
+            delay: {
+                show: '100',
+                hide: '1000'
+            }
+        });
+
+        $(['[id="infoAgCentral"]']).popover({
+            trigger: 'hover',
+            delay: {
+                show: '100',
+                hide: '1000'
+            }
+        });
+
+        $(['[id="infoSemAgendamento"]']).popover({
+            trigger: 'hover',
+            delay: {
+                show: '100',
+                hide: '1000'
+            }
+        });
+
+        //FIM POPOVER
+        $(document).ready(function (event) {
+            
+        });
+
+        //verificar se form do login é valido
+        $('#formLoginUser').submit(function () {
+            if ($(this).valid()) {
+                showLoadSucesso();
+                $("#msgEsqSenha").css("display", 'none');
+                $('#gridModal').modal('hide');
+            }
+        });
+
+        // variaveis
+        function showModalLogin() {
+            $("#msgEsqSenha").css("display", 'none');
+            $('#gridModal').modal('show');
+
+            var senha = document.getElementById("usuario.Senha");
+
+            senha.onkeydown = function () {
+                if (senha.value.length === 8) {
+                    $("#divMsgErro").css("display", "initial");
+                    $("#txtErrorLogin").html("<h5>Limite do campo senha é de 8 caracteres.</h5>");
+                }
+                else if (senha.value.length < 8) {
+                    $("#divMsgErro").css("display", "none");
+                }
+            };
+
+        }
+
+        function refreshCaptcha() {
+            $("#btnRefreshCaptcha").on("click",
+                function () {
+                    $('#imgCaptcha').attr('src', 'https://autoagendamento-fleury-int.azurewebsites.net/LoginUsuario/GeraCaptcha?nc=' + (new Date).getTime());
+                })
+        }
+
+        function refreshCaptchaAuto() {
+            $('#imgCaptcha').attr('src', 'https://autoagendamento-fleury-int.azurewebsites.net/LoginUsuario/GeraCaptcha?nc=' + (new Date).getTime());
+        }
+
+        //se estiver na tela de sucesso e clicar em LogOut apresenta o modal
+        $("#Logout").click(function (e) {
+            sessionStorage.clear();
+            url = window.location.href;
+            if (url.match("/Confirmacao/Index")) {
+                $('#gridConfirmModal').modal('show');
+
+                $('#btnSim').click(function (e) {
+                    var url = 'https://autoagendamento-fleury-int.azurewebsites.net/LoginUsuario/LogOut';
+                    window.location.href = url;
+                });
+
+            } else if (url.match("/Confirmacao/Sucesso")) {
+                $('#gridConfirmModal').modal('show');
+
+                $('#btnSim').click(function (e) {
+                    var url = 'https://autoagendamento-fleury-int.azurewebsites.net/LoginUsuario/LogOut';
+                    window.location.href = url;
+                });
+            } else {
+                var url = 'https://autoagendamento-fleury-int.azurewebsites.net/LoginUsuario/LogOut';
+                window.location.href = url;
+            }
+
+        });
+
+        //Esqueci minha Senha
+        $(document).ready(function () {
+
+            $('.lnkEsqSenha').on('click', function () {
+
+                $("#msgEsqSenha").css("display", 'none');
+
+                var loginLayout = false;
+                if ($('#gridModal').is(':visible')) {
+                    loginLayout = true;
+                }
+                var usuarioTela = "";
+                if (loginLayout) {
+                    usuarioTela = document.getElementById('txtIdentificacaoUsuario').value;
+                }
+                else {
+                    usuarioTela = document.getElementById('usuario.IdentificacaoUsuario').value;
+                }
+
+                if (usuarioTela.length > 0) {
+                    $("#usuarioRecuperar").html(usuarioTela);
+
+                    if (loginLayout) {
+                        $('#gridModal').modal('hide');
+                        $('#ModalMsgRecuperaSenha').modal('show');
+                    } else {
+                        $('#gridSystemModal').modal('hide');
+                        $('#ModalMsgRecuperaSenha').modal('show');
+                    }
+
+                    //Clicando em SIM será redirecionado
+                    $("#btnEsqSim").on("click", function () {
+                        var marca = 'Fleury';
+
+                        if (marca === "Fleury") {
+                            window.open('https://resultados.fleury.com.br/Cliente/EsqueciSenha.aspx?login=' + usuarioTela, '_blank');
+                        }
+                        else {
+                            window.open('http://amaissaude.com.br/Acesso/EsqueciSenha.aspx?login=' + usuarioTela, '_blank');
+                        }
+
+                        setTimeout(function () {
+                            $('#ModalMsgRecuperaSenha').modal('hide');
+                        }, 1000);
+                    });
+
+                    //clicando em NAO volta a abrir o modal de login
+                    $("#btnEsqFechar").on("click", function () {
+                        $('#ModalMsgRecuperaSenha').modal('hide');
+                    });
+                }
+                else {
+                    $("#msgEsqSenha").css("display", 'initial');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

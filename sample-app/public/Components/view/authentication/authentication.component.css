@@ -1,0 +1,96 @@
+.lc-authentication > p, .lc-authentication > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fl-authentication {
+    display: block; /* iframes are inline by default */
+    border: none; /* Reset default border */
+    height: 100vh; /* Viewport-relative units */
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1032;
+    background-color: rgba(0,0,0, 0.7);
+}
+
+.fl-authentication-modal {
+    background-color: rgb(255,255,255);
+    width: 22%;
+    margin: 10px auto;
+    position: relative;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.fl-authentication-frame {
+    border: none;
+    margin: 0 auto;
+    height: 65vh;
+    width: 100%;
+    display: block;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.fl-authentication-right {
+    float: right;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.fl-authentication-btn-close {
+    margin: auto;
+    line-height: 1px;
+    vertical-align: middle;
+    color: rgba(255,255,255,0.9);
+    font-size: 1.8em;
+    font-weight: 300;
+    font-family: "Courier New", "Courier", "Arial";
+    text-align: center;
+    background-color: #989392;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    outline: none;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1680px) {
+    .fl-authentication-modal {
+        width: 28% !important;
+    }
+
+    .fl-authentication-frame {
+        height: 85vh !important;
+    }
+}
+
+
+@media screen and (min-width: 1191px) and (max-width: 1366px) {
+    .fl-authentication-modal {
+        width: 30% !important;
+    }
+
+    .fl-authentication-frame {
+        height: 60vh !important;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .fl-authentication-modal {
+        width: 100% !important;
+        height: 90% !important;
+        margin: 0 auto !important;
+    }
+
+    .fl-authentication-frame {
+        height: 100vh !important;
+    }
+}
